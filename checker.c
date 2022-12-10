@@ -25,5 +25,6 @@ int CheckBatChargeRate(float chargeRate)
 int main() {
   assert(CheckBatTemp(25));
   assert(!CheckBatTemp(50));
-  assert(!CheckBatSoc(0));
+  assert(!CheckBatTemp(0));
+  assert(!CheckBatTemp(45));
 }
