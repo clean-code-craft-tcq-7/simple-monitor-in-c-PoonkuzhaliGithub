@@ -22,13 +22,7 @@ int CheckBatChargeRate(float chargeRate)
     return 0;}
    return 1;
 }
-int batteryIsOk(float temperature,float soc,float chargeRate)
-{
-  if((CheckBatTemp(temperature) == 1) && (CheckBatSoc(soc) == 1) && (CheckBatChargeRate(chargeRate) ==1)){
-     return 1;}
-  return 0;
-}
 int main() {
-  //assert(batteryIsOk(25, 70, 0.7));
-  //assert(!batteryIsOk(50, 85, 0));
+  assert(CheckBatTemp(25));
+  assert(!CheckBatTemp(50));
 }
