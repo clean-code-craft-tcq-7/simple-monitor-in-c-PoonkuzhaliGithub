@@ -28,5 +28,7 @@ int main() {
   assert(!CheckBatTemp(0));
   assert(!CheckBatTemp(45));
   assert(CheckBatSoc(30));
-  assert(CheckBatSoc(-10));
+  assert(!CheckBatSoc(90));
+  assert(CheckBatChargeRate(0.1));
+  assert(!CheckBatChargeRate(1));
 }
